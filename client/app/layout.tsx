@@ -16,12 +16,6 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
-  const { userId } = auth();
-  const user = await currentUser();
-  console.log("User", user);
-  console.log("Id", userId);
-
   return (
     <ClerkProvider>
       <html lang='en'>
